@@ -74,10 +74,6 @@ section {
         display: block;
     }
 
-    nav {
-        margin-top: -10px;
-    }
-
     nav ul {
         position: relative;
         width: 25vh;
