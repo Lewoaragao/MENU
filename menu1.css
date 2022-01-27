@@ -6,9 +6,8 @@
 }
 
 body {
-    height: 1000px;
-    background: rgb(0, 0, 0);
-    max-width: 500px;
+    background: gray;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -45,20 +44,58 @@ nav ul li a {
     
 }
 nav ul li:hover {
-    background: gray;
+    background: rgb(150, 50, 50);
 }
 
 section {
     padding: 20px;
     color: white;
+    text-align: justify;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+}
+#check {
+    display: none;
 }
 
 @media screen and (max-width: 850px) {
     body {
-        background: gray;
+        overflow-x: hidden;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    nav {
+        margin-top: -10px;
     }
 
     nav ul {
-        display: none;
+        position: relative;
+        width: 25vh;
+        background: white;
+        top: 60px;
+        right: -100%;
+        text-align: center;
+        transition: .3s;
+        box-shadow: -3px 3px 2px black;
+        margin: -10px;
+    }
+    
+    nav ul li {
+        display: block;
+    }
+
+    #check:checked ~ ul {
+        right: -45px;
+        z-index: 1000;
     }
 }
