@@ -96,6 +96,5 @@ section {
 
     #check:checked ~ ul {
         right: -45px;
-        z-index: 1000;
     }
 }
