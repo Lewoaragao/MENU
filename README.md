@@ -1,1 +1,1 @@
-All menu responsives.
+All menus are responsive.
